@@ -8,8 +8,11 @@ Gem::Specification.new do |spec|
   spec.version       = Rspec::Visual::VERSION
   spec.authors       = ["Simon Bagreev"]
   spec.email         = ["sbagreev@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %Q{ Visual testing with rspec via screenshot comparison. }
+  spec.description   = %Q{ Adds 'visual' specs and matchers that take screenshots
+                          of the app and compare them to find regressions in
+                          frontend. Must have imagemagick installed! Depends on
+                          rspec, capybara, poltergeist }
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +21,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "rspec", "~> 3.0"
+  spec.add_dependency "capybara", "~> 2.4"
+  spec.add_dependency "poltergeist", "~> 1.6"
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
 end

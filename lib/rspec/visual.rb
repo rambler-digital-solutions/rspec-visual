@@ -1,7 +1,4 @@
-require "rspec/visual/version"
-
-module Rspec
-  module Visual
-    # Your code goes here...
-  end
-end
+require 'rspec/visual/version'
+require 'rspec/visual/configuration'
+require 'rspec/visual/helpers/screenshot_helper'
+require 'rspec/visual/matchers/look_like_matcher'
