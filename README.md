@@ -71,6 +71,15 @@ Screenshots from all "visual" tests will be matched against ones in "stable" fol
 
 In case there is a difference, like so:
 
+#### "Stable" screenshot
+![Original](/rambler-digital-solutions/rspec-visual/blob/screenshots-do-not-delete/sample1.jpg?raw=true "Original")
+
+#### Screenshot with changes (banner missing)
+![Actual](/rambler-digital-solutions/rspec-visual/blob/screenshots-do-not-delete/sample2.jpg?raw=true "Actual")
+
+#### Diff file (diff area is highlighted in red)
+![Diff](/rambler-digital-solutions/rspec-visual/blob/screenshots-do-not-delete/sample_diff.jpg?raw=true "Diff")
+
 The test will fail and difference file will be generated in
 `Rspec::Visual::Configuration.screenshot_folder`:
 
