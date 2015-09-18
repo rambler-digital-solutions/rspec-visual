@@ -101,13 +101,11 @@ than manually copy now-correct screenshot to the "stable" folder in order for sp
 
 1. depends on `rspec, capybara, poltergeist, phantomJS` and _**imagemagick**_
 2. May conflict with `VCR`, to overcome use:
-
 ```ruby
 VCR.configure do |c|
   c.ignore_localhost = true
 end
 ```
-
 3. If you want to check the app that is NOT _localhost_, use Capybara config like so:
 
 ```ruby
@@ -134,7 +132,7 @@ end
 - add ability to take screenshots in different viewports
 - add ability to configure 'similarity' percentage
 - add ability to test certain areas of the page
-- add test coverge
+- add test coverage
 - expand beyond `poltergeist`, try `selenium-webkit`
 
 1. Fork it ( https://github.com/[my-github-username]/rspec-visual/fork )
