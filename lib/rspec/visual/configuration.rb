@@ -1,4 +1,6 @@
 require 'singleton'
+require 'capybara/rspec'
+require 'capybara/poltergeist'
 
 module Rspec
   module Visual
