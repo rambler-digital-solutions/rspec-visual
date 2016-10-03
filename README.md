@@ -1,5 +1,8 @@
 # Rspec::Visual
 
+[![Gem Version](https://badge.fury.io/rb/rspec-visual.svg)](https://badge.fury.io/rb/rspec-visual)
+
+
 RSpec plugin for writing "visual" tests: tests that look for changes in the
 applications's look by comparing screenshots on current branch to the latest
 'stable' screenshots
@@ -140,3 +143,7 @@ end
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
